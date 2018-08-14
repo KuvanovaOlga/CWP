@@ -97,3 +97,5 @@ function watchDir(dirForTxt) {
         }
     });
 }
+
+
