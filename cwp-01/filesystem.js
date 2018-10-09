@@ -59,14 +59,17 @@ function writefile(pat, made_dir){
         else {
             for(let i in files){
                 let files_or_directories=pat+'\\'+files[i];
-                if(fs.statSync(files_or_directories).isDirectory())
+                if(fs.statSync(files_or_directories, (err) =>{
+                    if(err) console.log('error')}).isDirectory())
                     writefile(files_or_directories,made_dir);
                 else {
                     if(path.extname(files_or_directories)===".txt") {
                         fs.readFile(files_or_directories,'utf8' ,(err, data)=>{
                                 if(err)console.log('Error reading file.');
                                 else {
-                                    fs.writeFile(made_dir + `\\` + files[i], copyright+`\r\n`+ data + `\r\n` + copyright );
+                                    fs.writeFile(made_dir + `\\` + files[i], copyright+`\r\n`+ data + `\r\n` + copyright, (err) => {
+                                    if(err) console.log('error');
+                                    else console.log("done")});
                                 }
                             }
                         );
