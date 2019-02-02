@@ -1,0 +1,12 @@
+{
+  "db" : {
+    "name": "NLayer",
+    "user" : "CPWadmin",
+    "password" : "qwerty",
+    "host" : "localhost"
+  },
+  "cookie": {
+    "key": "secret key",
+    "auth": "__auth_id"
+  }
+}

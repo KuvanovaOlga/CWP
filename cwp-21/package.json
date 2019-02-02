@@ -1,0 +1,16 @@
+{
+  "name": "cwp-21",
+  "version": "1.0.0",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
+    "joi": "^13.1.2",
+    "lru-cache": "^4.1.1",
+    "moment": "^2.20.1",
+    "sequelize": "^4.33.4",
+    "tedious": "^2.3.1",
+    "winston": "^2.4.0",
+    "winston-daily-rotate-file": "^1.7.2"
+  }
+}
