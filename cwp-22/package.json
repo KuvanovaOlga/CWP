@@ -1,0 +1,11 @@
+{
+  "name": "cwp-22",
+  "author": "Kuvanova Olga",
+  "repository": { "type" : "git"
+  , "url" : "https://github.com/KuvanovaOlga/cwp-22-1.git"
+  },
+  "version": "1.0.0",
+  "dependencies": {
+    
+  }
+}
